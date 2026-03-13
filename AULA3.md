@@ -44,14 +44,17 @@ R:
 **Quando** ele preenche os campos obrigatórios: Nome, E-mail e Senha **e** clica no botão "Salvar" 
 **Então** o sistema deve exibir a mensagem "Usuário cadastrado com sucesso!" **E** o usuário cadastrado deve aparecer na lista de usuários ativos.
 
-### **READ usuário** **Dado** que o administrador está na página de "Listagem de Usuários" 
+### **READ usuário** 
+**Dado** que o administrador está na página de "Listagem de Usuários" 
 **Quando** ele busca por um usuário **e** clica no ícone "Ver Detalhes" 
 **Então** o sistema deve exibir uma tela com as informações completas daquele usuário.
 
-### **UPDATE usuário** **Dado** que o administrador está visualizando os detalhes do usuário "Gabriel" 
+### **UPDATE usuário** 
+**Dado** que o administrador está visualizando os detalhes do usuário "Gabriel" 
 **Quando** ele altera o campo "Nome" para "Gabriel Felipe" **e** clica em "Atualizar Cadastro" 
 **Então** o sistema deve exibir a mensagem "Dados atualizados com sucesso!" **E** o nome do usuário na listagem deve constar como "Gabriel Felipe".
 
-### **DELETE usuário** **Dado** que o administrador está na página de "Listagem de Usuários" 
+### **DELETE usuário** 
+**Dado** que o administrador está na página de "Listagem de Usuários" 
 **Quando** ele clica no ícone "Excluir" ao lado de um determinado usuário **e** confirma a exclusão no modal de aviso 
 **Então** o sistema deve exibir a mensagem "Usuário removido." **E** o e-mail do usuário não deve mais aparecer na listagem.
